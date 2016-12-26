@@ -1,0 +1,23 @@
+{
+  "name": "react-alert",
+  "version": "1.0.0",
+  "description": "a alert tips for mobile web",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Caesor/react-alert.git"
+  },
+  "author": "liaozksysu@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Caesor/react-alert/issues"
+  },
+  "homepage": "https://github.com/Caesor/react-alert#readme",
+  "dependencies": {
+    "react": "^15.4.1",
+    "react-singleton": "^1.0.0"
+  }
+}
