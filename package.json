@@ -1,23 +1,41 @@
 {
   "name": "react-alert",
   "version": "1.0.0",
-  "description": "a alert tips for mobile web",
-  "main": "index.js",
+  "description": "A alert tips for mobile web",
+  "main": "dist/react-alert.min.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npm run build:umd & npm run build:umd:min",
+    "build:umd": "webpack",
+    "build:umd:min": "NODE_ENV=production webpack",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Caesor/react-alert.git"
+    "url": "https://github.com/Caesor/react-alert.git"
   },
   "author": "liaozksysu@gmail.com",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/Caesor/react-alert/issues"
   },
   "homepage": "https://github.com/Caesor/react-alert#readme",
   "dependencies": {
     "react": "^15.4.1",
-    "react-singleton": "^1.0.0"
+    "react-singleton": "^1.3.0",
+    "react-tap-event": "^1.0.3"
+  },
+  "devDependencies": {
+    "babel-core": "^6.21.0",
+    "babel-loader": "^6.2.10",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
+    "babel-preset-stage-1": "^6.16.0",
+    "css-loader": "^0.26.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "less": "^2.7.1",
+    "less-loader": "^2.2.3",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.14.0"
   }
 }

@@ -12,14 +12,15 @@
  *  @ param(bool)         useTap: Use Tap event as default, not Click
  *  @ param(function)     callback: Events called after CONFIRM button is clicked
  *  @ param(function)     cancelCallback: Events called after CANCEL button is clicked
+ *  @ param(function)     close: Use container's method to close the Alert
  *
  *  Copyright by nemoliao( liaozksysu@gmail.com), nemo is a member of AlloyTeam in Tencent.
  *
  **********************************************************************************************/
 
 import React, { Component } from 'react'
-import Singleton from 'Singleton'
-import 'react-tap'
+import Singleton from 'react-singleton'
+import 'react-tap-event'
 import './index.less'
 
 class Button extends Component{
@@ -51,6 +52,7 @@ class Alert extends Component {
         cancelText: React.PropTypes.string,
         confirmText: React.PropTypes.string,
         useTap: React.PropTypes.bool,
+        close: React.PropTypes.func,
         callback: React.PropTypes.func,
         cancelCallback: React.PropTypes.func
     }
@@ -88,9 +90,11 @@ class Alert extends Component {
     }
 
     clickHandler(cb) {
-        this.setState({
-            show: false
-        });
+        const { close } = this.props;
+
+        close && close();
+        !close && this.setState({show: false});
+
         cb && cb();
     }
 }
