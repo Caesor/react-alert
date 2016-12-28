@@ -3,9 +3,8 @@ Alert component imitated iOS build with react
 
 ## Demo
 You can find demo in folder [example](https://github.com/Caesor/react-alert/examples)
-![demo1](./demo1.png)
-![demo2](./demo2.png)
-![demo3](./demo3.png)
+
+![demo](./demo.png)
 
 ## Usage with React
 
