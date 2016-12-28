@@ -1,8 +1,8 @@
 {
-  "name": "react-alert",
+  "name": "react-ios-alert",
   "version": "1.0.0",
   "description": "A alert tips for mobile web",
-  "main": "dist/react-alert.min.js",
+  "main": "dist/react-ios-alert.min.js",
   "scripts": {
     "build": "npm run build:umd & npm run build:umd:min",
     "build:umd": "webpack",

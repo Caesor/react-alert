@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import ReactDOM, { render } from 'react-dom'
-import Alert, { SingleAlert } from '../dist/react-alert.js'
+import Alert, { SingleAlert } from '../dist/react-ios-alert.js'
 
-import '../dist/react-alert.css'
+import '../dist/react-ios-alert.css'
 
 class Main extends Component {
     state = {

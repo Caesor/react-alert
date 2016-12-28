@@ -4,7 +4,7 @@ var path = require('path'),
 
 var config = {
     entry: {
-        "react-alert": './src/index.js'
+        "react-ios-alert": './src/index.js'
     },
     externals: {
         "react": "react",
