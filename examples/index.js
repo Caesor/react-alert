@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import ReactDOM, { render } from 'react-dom'
-import Alert, { SingleAlert } from '../dist/react-ios-alert.js'
+import Alert, { SingleAlert } from 'react-ios-alert'
 
-import '../dist/react-ios-alert.css'
+import 'react-ios-alert/dist/react-ios-alert.css'
 
 class Main extends Component {
     state = {
@@ -28,8 +28,6 @@ class Main extends Component {
                 <button onClick={e=>this.showSingle1()}>click me to show Singleton Alert 1</button>
                 <br/>
                 <button onClick={e=>this.showSingle2()}>click me to show Singleton Alert 2</button>
-                <br/>
-                <button onClick={e=>this.hideSingle()}>click me to destory Singleton Alert from DOM</button>
             </div>
         )
     }
@@ -54,9 +52,6 @@ class Main extends Component {
             content: 'Alert Singleton 2',
             confirmText: 'OK'
         });
-    }
-    hideSingle() {
-        SingleAlert.hide();
     }
 }
 

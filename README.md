@@ -3,6 +3,9 @@ Alert component imitated iOS build with react
 
 ## Demo
 You can find demo in folder [example](https://github.com/Caesor/react-alert/examples)
+![demo1](./demo1.png)
+![demo2](./demo2.png)
+![demo3](./demo3.png)
 
 ## Usage with React
 
@@ -15,6 +18,8 @@ You can find demo in folder [example](https://github.com/Caesor/react-alert/exam
 
 import React, { Component } from 'react'
 import Alert from 'react-alert'
+
+import 'react-ios-alert/dist/react-ios-alert.min.css'
 
 class Main extends Component {
     state = {
