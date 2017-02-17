@@ -1,5 +1,5 @@
 # react-alert
-Alert component imitated iOS build with react
+Alert component simitated iOS build with react
 
 ## Demo
 You can find demo in folder [example](https://github.com/Caesor/react-alert/examples)
